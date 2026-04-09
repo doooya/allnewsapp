@@ -6,16 +6,7 @@ export default function Document() {
         <meta name="google-adsense-account" content="ca-pub-5906025502715825" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5906025502715825" crossOrigin="anonymous" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSEVLTNRVR" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-WSEVLTNRVR');
-            `,
-          }}
-        />
+        <script dangerouslySetInnerHTML={{__html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-WSEVLTNRVR');`}} />
       </Head>
       <body>
         <Main />
