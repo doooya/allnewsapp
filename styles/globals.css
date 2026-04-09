@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply text-gray-800 bg-gray-50 antialiased; }
+}
+
+@layer components {
+  .news-card { @apply bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200 overflow-hidden; }
+  .category-btn { @apply px-4 py-2 rounded-full text-sm font-semibold transition-colors duration-200; }
+  .category-btn-active { @apply bg-red-600 text-white; }
+  .category-btn-inactive { @apply bg-white text-gray-600 hover:bg-red-50 hover:text-red-600 border border-gray-200; }
+}
